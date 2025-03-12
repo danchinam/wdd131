@@ -1,0 +1,168 @@
+:root {
+  --alink: #0000ee;
+  --avisited: #551a8b;
+  --lightgray: rgb(240, 240, 240);
+  --gray: rgb(150, 150, 150);
+  --darkgray: rgb(50, 50, 50);
+  --byuiblue: rgb(0, 110, 182);
+  --navy: rgb(0, 0, 128);
+  --red: rgb(182, 0, 19);
+  --purple: rgb(103, 48, 155, .2);
+  --mustard: rgb(182, 163, 0);
+  --callout: rgb(230, 243, 254);
+  --error: rgb(255, 215, 225);
+  --warning: rgb(255, 255, 225);
+  --details: rgb(238, 254, 238);
+  --padd: 0.5rem;
+  --bord: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  display: grid;
+  width: 1200px;
+  grid-template: auto 1fr auto / 300px 1fr auto;
+  font-weight: 400;
+  margin-left: 2%;
+}
+
+header {
+  padding: 0;
+  grid-column: 1 / 4;
+}
+
+h1 {
+	text-align: center;
+	background-color: var(--byuiblue);
+	padding: 0.5rem;
+	color: #fff;
+}
+h2 {
+  text-align: center;
+	background-color: var(--byuiblue);
+	padding: 0.5rem;
+	color: #fff;
+  border-radius: 6px;
+}
+h3 {
+  text-align: center;
+	text-decoration: underline;
+	padding: 0.5rem;
+	color: var(--darkgray);
+  border-radius: 6px;
+  margin-top: 20%;
+}
+
+p {
+	text-align: center;
+}
+.fist-paragraph {
+  display: inline-block;
+  width: 300px;
+
+}
+
+nav {
+	margin: 0 auto 2rem;
+	max-width: 90vw;
+}
+
+main {
+	margin: 1rem;
+	padding: 1rem;
+  margin-right: 30%;
+} 
+
+.active {
+  color: yellow;
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #333;
+	align-items: center;
+}
+.navigation li {
+	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+.left-sidebar {
+  
+  grid-column: 1 / 2;
+  border: solid;
+  border-radius: 8px;
+}
+.image-dan {
+  position: absolute;
+  margin-left: 22%;
+  width: 120px;
+  padding-top: 1rem;
+}
+.first-paragraph {
+  width: 250px;
+  padding-top: 1rem;
+}
+.second-paragraph {
+  width: 400px;
+  padding-top: 0rem;
+  margin-left: 0%;
+  margin-bottom: 30%;
+
+}
+.image-flag {
+  margin-left: 0;
+  width: 100px;
+  padding-top: 1rem;
+  
+}
+
+main {
+  display: grid;
+  grid-column: 1 / 6;
+
+}
+
+.right-sidebar {
+  border: solid;
+  grid-column: 2 / 2;
+  margin-left: 40%;
+}
+h4 {
+  text-align: center;
+  background-color: var(--byuiblue);
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 6px;
+}
+
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+}
+
+footer {
+  background: var(--byuiblue);
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
