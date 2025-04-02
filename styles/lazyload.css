@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+  background-color: skyblue;
+  margin: 0 auto;
+  width: 400px;
+}
+
+main {
+  margin: 0 auto;
+  width: 400px;
+  display: block;
+
+}
+
+img {
+  width: 100%;
+  background-color: skyblue;
+  animation: fade 15s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  background-color: skyblue;
+  width: 400px;
+}
+
