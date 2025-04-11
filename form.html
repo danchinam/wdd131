@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <form method="get" action="review.html" class="review">
+    <fieldset>
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product...</option>
+        </select>
+    </fieldset>
+        <fieldset>
+           
+                <legend>Overall Rating</legend>
+                <div class="stars">
+       
+            <input type="radio" id="rating1" name="rating" value="1" required> ☆
+            <input type="radio" id="rating2" name="rating" value="2" required> ☆☆
+            <input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆
+            <input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆
+            <input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆
+        </div>
+    </fieldset>
+    <fieldset>
+        <label for="installationDate">Date of Installation:</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+
+        
+            <label>which features did you find useful in the product?</label>
+            <div class="checkbox">
+              <label><input type="checkbox" name="Durability" value="yes">Durability</label>
+              <label><input type="checkbox" name="Ease" value="yes">Ease of use</label>
+              <label><input type="checkbox" name="Performance" value="yes">Performance</label>
+              <label><input type="checkbox" name="Design" value="yes">Design</label>
+            </div>
+        <label for="review">Written Review (optional):</label>
+        <textarea id="review" name="review"></textarea>
+        <div>
+        <label for="username">Your Name (optional):</label>       
+        <input type="text" id="username" name="username">
+    </div>
+        <div>
+        <input type="submit" value="Submit Review">
+    </div>
+    </fieldset>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Product Reviews  &#x1F33A; Daniel Chinagorom &#x1F33A;
+            Nigeria</p>
+            <p>Last Modification: 07/04/2025</p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+</body>
+</html>
