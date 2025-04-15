@@ -90,13 +90,20 @@ button:hover{
   color: orange;
 }
 
-.android-device {
-  background-color: coral;
+/* Phones */
+@media only screen and (max-width: 1420px) {
+  body {
+    
+  }
 }
 
-.pc-device {
-  background-color: skyblue;
+/* Tablets (optional) */
+@media only screen and (min-width: 1420px) and (max-width: 1024px) {
+  body {
+    
+  }
 }
+
 
 
 .hero img {
