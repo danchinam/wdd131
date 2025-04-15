@@ -91,7 +91,7 @@ button:hover{
 }
 
 @media (max-width: 760px) {
-  nav ul {
+  body {
     flex-direction: column;
   }
 }
