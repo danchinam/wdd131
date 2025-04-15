@@ -28,9 +28,10 @@ footer {
   background-color: #111;
   color: #fff;
   text-align: center;
-  padding: 2% 2%;
- ;
+  padding: 5% 5%;
   border-radius: 10px;
+  height: auto;
+  display: block;
  
 }
 
@@ -152,6 +153,7 @@ h1:hover{
   color: white;
   padding-top: 2%;
   padding-bottom: 2%;
+  padding: 0 auto;
   border-radius: 1rem;
   max-width: 40%;
   height: auto;
@@ -186,8 +188,10 @@ footer img {
 }
 
 .sociallink {
-  display: flex;
   justify-content: right;
+  max-width: 100%;
+  height: auto;
+  display: flex;
 
 }
 
@@ -199,7 +203,7 @@ footer img {
 
 .end {
   position: absolute;
-  margin-left: 30%;
+  margin-left: 25%;
   margin-top: -4%;
   align-items: center;
 }
