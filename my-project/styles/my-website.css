@@ -19,6 +19,7 @@ header {
   border-radius: 10px;
   background-color: #111;
   color: #fff;
+  max-width: 1100px;
 }
 
 footer {
@@ -40,6 +41,7 @@ nav ul {
   list-style: none;
  justify-content: center;
  padding: 2% 2%;
+
  border-radius: 1rem;
   
 }
@@ -90,19 +92,7 @@ button:hover{
   color: orange;
 }
 
-/* Phones */
-@media only screen and (max-width: 1420px) {
-  body {
-    
-  }
-}
 
-/* Tablets (optional) */
-@media only screen and (min-width: 1420px) and (max-width: 1024px) {
-  body {
-    
-  }
-}
 
 
 
@@ -168,11 +158,12 @@ h1:hover{
   cursor: pointer;
 }
 .article {
-  display: block;
+ 
 }
 
 .article img {
-  width: 1190px;
+  max-width: 1170px;
+
 }
 
 .book {
@@ -181,7 +172,7 @@ h1:hover{
 
 .music img {
   margin-top: 5%;
-  width: 1190px;
+  max-width: 1100px;
 }
 
 footer img {
@@ -205,4 +196,30 @@ footer img {
   margin-left: 30%;
   margin-top: -4%;
   align-items: center;
+}
+
+.wraper {
+  max-width: 1000px;
+}
+
+@media (min-width:760px) {
+  nav ul{
+    justify-content: center;
+  }
+  .wraper {
+    min-width: 100%;
+  }
+
+  article img {
+    max-width: 100%;
+  }
+
+  header {
+    max-width: 100%;
+  }
+
+  .music img {
+    max-width: 100%;
+  }
+  
 }
