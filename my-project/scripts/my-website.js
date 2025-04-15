@@ -45,3 +45,9 @@ if (form) {
 
 const currentYear = new Date().getFullYear();
 document.getElementById('current-year').textContent = currentYear;
+
+if (/Android/i.test(navigator.userAgent)) {
+  document.body.classList.add("android-device");
+} else {
+  document.body.classList.add("pc-device");
+}

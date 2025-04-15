@@ -90,18 +90,12 @@ button:hover{
   color: orange;
 }
 
-/* Phones */
-@media only screen and (max-width: 767px) {
-  body {
-    background-color: lightblue;
-  }
+.android-device {
+  background-color: coral;
 }
 
-/* Tablets (optional) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    background-color: lightgreen;
-  }
+.pc-device {
+  background-color: skyblue;
 }
 
 
