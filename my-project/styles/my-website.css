@@ -90,12 +90,20 @@ button:hover{
   color: orange;
 }
 
-@media (max-width: 760px) {
+/* Phones */
+@media only screen and (max-width: 767px) {
   body {
-    flex-direction: column;
-    max-width: 800px;
+    background-color: lightblue;
   }
 }
+
+/* Tablets (optional) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
 
 .hero img {
   margin-right: 80%;
