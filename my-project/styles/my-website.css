@@ -211,6 +211,7 @@ footer img {
   }
 
   article img {
+    display: block;
     max-width: 100%;
   }
 
@@ -219,6 +220,7 @@ footer img {
   }
 
   .music img {
+    display: block;
     max-width: 100%;
   }
   
