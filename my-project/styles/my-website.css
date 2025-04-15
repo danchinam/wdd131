@@ -118,12 +118,12 @@ h1:hover{
 }
 
 .center {
-  display: block;
+  
   justify-content: center;
   margin-left: 33%;
+  margin-right: 33%;
   font-weight: 400px;
   border: solid 1px;
-  width: 400px;
   padding-left: 2%;
   background-color: rgb(99, 82, 227);
   color: white;
@@ -131,6 +131,9 @@ h1:hover{
   padding-bottom: 2%;
   margin-bottom: 2%;
   border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+  display: block
 }
  .center:hover{
   color: orange;
@@ -157,22 +160,23 @@ h1:hover{
   color: orange;
   cursor: pointer;
 }
-.article {
- 
-}
 
 .article img {
-  max-width: 1170px;
 
-}
-
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
 .book {
   margin: 2%;
 }
 
 .music img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   margin-top: 5%;
-  max-width: 1100px;
 }
 
 footer img {
@@ -216,7 +220,7 @@ footer img {
   }
 
   header {
-    max-width: 100%;
+    min-width: 100%;
   }
 
   .music img {
@@ -225,3 +229,4 @@ footer img {
   }
   
 }
+
