@@ -1,0 +1,103 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    body {
+      background-color: white;
+      font-family: Roboto, montserrat sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0b9dfe;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #292525;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: orange;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #0b9dfe;
+      color: white;
+      text-align: center;
+      padding: 20px 20px;
+      
+      bottom: 0;
+      width: 100%;
+    }
+
+    .project-gallery {
+      padding-bottom: 20px;
+      padding-top: 20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    h2 {
+      color: #0b9dfe;
+      font-weight: bold;
+      text-decoration: underline;
+      padding-bottom: 1%;
+      
+    }
+
+  .look {
+    padding: 5px;
+    font-weight: bold;
+      border: solid 1px #0b9dfe;
+      background-color: #0b9dfe;
+      color: white
+  }
+
+    .about{
+      padding: 20px;
+      font-weight: bold;
+      border: solid 1px black;
+      border-radius: 10px;
+      background-color: #0b9dfe;
+      color: white;
+      text-align: center;
+    }
+  
+    .service-image {
+     color: #0b9dfe;;
+      font-weight: bold;
+      
+      border-radius: 10px;
+    }
+
+    .logo-container {
+      position: absolute;
+      margin-right: 70%;
+    }
+
+    .logo {
+      width: 60px;
+      height: auto;
+    }
