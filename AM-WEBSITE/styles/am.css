@@ -52,9 +52,9 @@
       width: 100%;
     }
 
-    .project-gallery {
-      padding-bottom: 20px;
-      padding-top: 20px;
+    .project-top {
+      padding-bottom: 10px;
+      padding-top: 10px;
       font-weight: bold;
       font-size: 20px;
     }
@@ -69,6 +69,7 @@
 
   .look {
     padding: 5px;
+    margin-bottom: 5%;
     font-weight: bold;
       border: solid 1px #0b9dfe;
       background-color: #0b9dfe;
@@ -101,3 +102,31 @@
       width: 60px;
       height: auto;
     }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: space-between;
+      
+    }
+    .social-media img {
+      width: 50px;
+      height: auto;
+      padding: 20% 20%;
+    }
+
+    .project-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+  
+      
+    }
+    .project-gallery img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover; /* Ensures the image fits nicely within its container */
+      display: block; /* Removes extra space below images */
+    }
+    
