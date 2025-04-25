@@ -3,111 +3,95 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	font-family: Roboto, sans-serif;
+}
 
 h1 {
-	text-align: left;
-	font-family: times, serif;
-	font-size: 1.5rem;
-	margin-left: 1rem;
+	font-size: 1rem;
+	padding: 1rem;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
 }
 
-h2 {
-	font-size: 1.2rem;
-	color: navy;
-	text-align: left;
+p {
 	margin: 1rem;
+	border: 1px solid rgb(0 0 0 /0.1);
+	padding: 0.5rem;
+	background-color: #eee;
 }
-
-nav {
-	max-width: 700px;
-	margin: 1rem auto;
-}
-
-/* small view navigation */
+/* Mobile View ***************/
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
 	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
 }
 
 #menu::before {
-	content: "☰";
+	content: "≡";
 }
 
-#menu.open::before {
-	content: "❌";
+nav {
+	background-color: #ace;
 }
-
 .navigation {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 	list-style: none;
-	background-color: #333;
-	color: #fff;
+	margin: 0 auto;
+	max-width: 760px;
 }
 
-.navigation a {
+.navigation li {
 	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
 }
-.navigation a:hover {
-	background-color: #bbb;
-	color: #333;
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
 	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
 	display: block;
 }
 
-.active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
+#menu.show::before {
+	content: "X";
 }
 
-.stuff {
-	margin: 0.5rem;
-	border: 1px solid rgb(0  0  0 / 0.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
-}
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
 
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
 	h1 {
-		font-size: 2.5rem;
-		margin-left: 0;
-		text-align: center;
-	}
-
-	h2 {
 		font-size: 2rem;
-		text-align: center;
 	}
-
-	#menu {
-		display: none; /* hide hamburger button */
-	}
-
 	.navigation {
-		flex-direction: row;
+		display: flex;
 	}
-
-	.navigation a {
-		display: block;
+	.navigation li {
+		display: block; /* change state in small view */
 		flex: 1 1 100%;
 	}
-
-	.stuff {
-		margin: 1rem auto;
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
 	}
 }
